@@ -16,7 +16,7 @@ module Paperclip
       begin
         Paperclip.run(
           "identify",
-          "-format '%wx%h,%[exif:orientation]' :file", {
+          "-format '%wx%h' :file", {
             :file => "#{path}[0]"
           }, {
             :swallow_stderr => true
